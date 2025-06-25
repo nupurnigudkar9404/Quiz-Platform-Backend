@@ -27,8 +27,12 @@ public class QuestionService {
         return new ResponseEntity<>(new ArrayList<>(), HttpStatus.BAD_REQUEST);
     }
 
-    public List<Question> getQuestionsByCategory(String category) {
-        return questionRepository.findByCategory(category);
+    public ResponseEntity<List<Question>> getQuestionsByCategory(String category) {
+        try {
+            return new ResponseEntity<>(questionRepository.findByCategory(category),HttpStatus.OK) ;
+        }catch (Exception e){
+            e.printStackTrace();
+        }  return new ResponseEntity<>(new ArrayList<>(),HttpStatus.BAD_REQUEST) ;
     }
 
 
