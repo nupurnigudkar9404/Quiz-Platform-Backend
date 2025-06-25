@@ -30,7 +30,7 @@ public class QuestionController {
 
     @PostMapping("/add")
     public ResponseEntity<String> addQuestions(@RequestBody Question question){
-        return new ResponseEntity<>(questionService.addQuestions(question), HttpStatus.OK);
+        return new ResponseEntity<>(questionService.addQuestions(question), HttpStatus.CREATED);
 
     }
 

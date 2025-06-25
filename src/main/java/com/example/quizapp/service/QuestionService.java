@@ -39,7 +39,7 @@ public class QuestionService {
 
     public String addQuestions(Question question) {
         questionRepository.save(question);
-        return "success";
+        return "New Question added";
     }
 
     public ResponseEntity<String> deleteQuestion(Integer id) {
