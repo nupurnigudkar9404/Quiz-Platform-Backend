@@ -12,5 +12,5 @@ This is a simple Quiz Application built using **Spring Boot** and **PostgreSQL**
 Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/quiz-app.git
-cd quiz-app
+git clone https://github.com/your-username/Quiz-Platform-Backend.git
+cd Quiz-Platform-Backend
